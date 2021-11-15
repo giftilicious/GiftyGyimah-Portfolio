@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work With Gifty</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <!-- Main Navigation -->
+    <nav class="flex items-center pb-2  sm:mt-8">
+      <div class="px-6"><a href="/index.html"><img src="/assets/images/logo-gg_final-2.jpg"
+            alt="Gifty Gyimah logo" /></a></div>
+      <ul class="hidden md:flex flex-1 justify-end items-center gap-12 text-gray-800 uppercase text-md px-6">
+        <a href="/about.html" class="inline-block p-2 uppercase text-lg text-gray-700 hover:text-gray-400">About</a>
+        <a href="/portfolio.html"
+          class="inline-block p-2 uppercase text-lg text-gray-700 hover:text-gray-400">Portfolio</a>
+        <a href="/resume.html" class="inline-block p-2 uppercase text-lg text-gray-700 hover:text-gray-400">Resume</a>
+        <a href="/contact.html" class="inline-block p-2 uppercase text-lg text-gray-700 hover:text-gray-400">Contact</a>
+      </ul>
+      <!-- Main Navigation -->
+      <div class="flex md:hidden flex-1 justify-end pr-2">
+        <div class="w-full sm:w-6/12 md:w-4/12 px-4">
+          <div class="relative inline-flex align-middle w-full">
+            <button
+              class="bg-gray-700 text-white active:bg-gray-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+              type="button" onclick="openDropdown(event,'dropdown-example-1')">
+              <i class="text-2xl fas fa-bars"></i>
+            </button>
+            <div class="hidden bg-white  text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1"
+              style="min-width:12rem" id="dropdown-example-1">
+              <a href="/about.html"
+                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100">
+                About
+              </a>
+              <a href="/portfolio.html"
+                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100">
+                Portfolio
+              </a>
+              <a href="/resume.html"
+                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100">
+                Resume
+              </a>
+              <div class="h-0 my-2 border border-solid border-t-0 border-blueGray-800 opacity-25"></div>
+              <a href="/contact.html"
+                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100">
+                Contact
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Image-->
+  <section class="hero-image relative">
+    <img src="/assets/images/hero-image-3.jpg" alt="Hero image" />
+  </section>
+
+  <!-- Project Section -->
+  <section class="bg-gray-50 pt-16">
+    <div class="container mx-auto pb-32">
+      <!-- Heading -->
+      <div class="pt-24 sm:w-3/4 lg:w-1/2 mx-auto px-8">
+        <div class="divider">
+          <h2 class="text-gray-600 text-2xl text-center ">Some of my latest projects</h2>
+        </div>
+      </div>
+      <!-- Portfolio Cards -->
+      <div class="p-24 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-x-12 gap-y-16 justify-items-center">
+        <!-- Card 1  -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+          <a href="https://inout-app.herokuapp.com/" target="_blank"><img class="w-full"
+              src="/assets/images/in-or-out.jpg" alt="In or Out Project"></a>
+          <div class="px-6 py-4">
+            <div class="text-gray-800 font-semibold text-xl mb-2">In Or Out</div>
+            <p class="text-gray-700 text-base">
+              A dynamic web application that generates indoor and outdoor activities based on user preference.
+            </p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+          <a href="https://github.com/giftilicious/Team-Profile-Generator" target="_blank"><img class="w-full"
+              src="/assets/images/team-profile.jpg" alt="Team profile project"></a>
+          <div class="px-6 py-4">
+            <div class="text-gray-800 font-semibold text-xl mb-2">Team Profile Generator</div>
+            <p class="text-gray-700 text-base">
+              An application that generates an HTML webpage with summaries of employees on a software engineering team.
+            </p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+          <a href="https://github.com/giftilicious/ecommerce-database" target="_blank"><img class="w-full"
+              src="/assets/images/ecommerce.jpg" alt="Ecommerce project"></a>
+          <div class="px-6 py-4">
+            <div class="text-gray-800 font-semibold text-xl mb-2">Ecommerce Database</div>
+            <p class="text-gray-700 text-base">
+              Back-end for an ecommerce site.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer  -->
+  <footer class="bg-gray-800 p-10 flex justify-between items-center">
+    <h2 class="text-white">Get In Touch!</h2>
+    <nav>
+      <a href="mailto:giftilicious.dev@gmail.com" class="p-2 text-lg text-white hover:text-gray-100">Email</a>
+      <a href="https://www.linkedin.com/in/giftygyimah/" class="p-2 text-lg text-white hover:text-gray-100">LinkedIn</a>
+      <a href="https://github.com/giftilicious" class="p-2 text-lg text-white hover:text-gray-100">GitHub</a>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js" charset="utf-8"></script>
+  <script>
+    function openDropdown(event, dropdownID) {
+      let element = event.target;
+      while (element.nodeName !== "BUTTON") {
+        element = element.parentNode;
+      }
+      let popper = Popper.createPopper(element, document.getElementById(dropdownID), {
+        placement: 'bottom-start'
+      });
+      document.getElementById(dropdownID).classList.toggle("hidden");
+      document.getElementById(dropdownID).classList.toggle("block");
+    }
+  </script>
+</body>
+
+</html>
